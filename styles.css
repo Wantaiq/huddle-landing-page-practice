@@ -1,0 +1,211 @@
+/* ---- Reset ----- */
+
+/* Box sizing rules */ 
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margins */ 
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure {
+    margin: 0;
+}
+
+/* Set core body defaults */ 
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Set core root defaults */ 
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Make images easier to work with */ 
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Remove animations, transitions and smooth scroll for people
+that prefer not to see them */ 
+
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;;
+    }
+    *,
+    *::after,
+    *::before {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* ----- Reset done ------- */ 
+
+/* Colors */ 
+:root {
+    --cta-color: hsl(332, 100%, 66%);
+    --hero-bg: hsl(193, 100%, 96%);
+    --btn-color: hsl(193, 100%, 96%);
+    --inverse-bg-color: hsl(192, 100%, 9%);
+    --inverse-font-color: hsl(193, 100%, 96%);
+    --p-color: hsl(208, 11%, 55%);
+    --primary-heading-color: hsl(192, 100%, 9%);
+}
+/* Typography */ 
+
+body {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-align: center
+}
+
+h1,
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+    color: var(--primary-heading-color);
+}
+
+
+/* Buttons */
+
+.cta-btn, 
+.small-btn {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 700;
+    font-family: inherit;
+
+}
+.cta-btn {
+    background-color: var(--cta-color);
+    padding: 8px 50px;
+    font-size: 16px;
+    color: var(--btn-color);
+    margin-bottom: 40px;
+}
+
+.small-btn {
+    color: darkslategray;
+    background-color: #fff;
+    padding: 3px 20px;
+    font-size: 14px;
+    float: right;
+}
+
+.cta-btn:hover,
+.cta-btn:focus {
+    background-color: red;
+}
+/* Layout */
+
+.hero {
+    background-image: url("images/bg-hero-mobile.svg");
+    background-repeat: no-repeat;
+    background-color: var(--hero-bg);
+    color: var(--primary-heading-color)
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 70px 40px;
+}
+
+.nav.container {
+    padding: 20px 20px 20px 15px;
+    
+}
+
+section {
+    color: var(--p-color);
+}
+
+img {
+    width: 100%;
+}
+
+.logo-header {
+    float: left;
+    width: 100px;
+    margin-top: 10px;
+}
+
+.inverse {
+    background-color: var(--inverse-bg-color);
+    color: var(--inverse-font-color);
+}
+
+.info {
+    padding-top: 100px;
+    text-align: left;
+}
+
+
+.margin-bottom {
+    margin-bottom: 25px;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin-left: -15px;
+    margin-bottom: 10px;
+}
+
+.small-text {
+    font-size: 12px;
+    text-align: center;
+}
+
+.call-to-action {
+    position: absolute;
+    background-color: white;
+    width: 95%;
+    border-radius: 10px;
+    right: 10px;
+}
+
+/* Icons */
+
+
+.icon-phone,
+.icon-mail,
+.icon-location {
+    position: relative;
+    display: block;
+    right: 30px;
+    top: 25px;
+}
+
+
+@media only screen and (min-width: 961px) {
+    .hero {
+        background-image: url("images/bg-hero-desktop.svg") no-repeat;
+    }
+}
