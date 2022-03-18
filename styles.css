@@ -186,6 +186,10 @@ li {
     text-align: center;
 }
 
+.small-text a {
+    color: pink;
+}
+
 .call-to-action {
     position: absolute;
     background-color: white;
@@ -222,7 +226,6 @@ svg {
 }
 
 
-
 @media only screen and (min-width: 961px) {
     .hero {
         background-image: url("images/bg-hero-desktop.svg") no-repeat;
@@ -239,6 +242,22 @@ svg {
     }
     .small-text {
         text-align: right;
+    }
+    .desktop-flex-reverse {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .desktop-flex {
+        display: flex;
+    }
+    .col {
+        width: 35%;
+        align-self: center;
+        text-align: left;
+        margin: 0 auto;
+    }
+    h1 {
+        font-size: 34px;
     }
 }
 
