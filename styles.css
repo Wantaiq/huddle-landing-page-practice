@@ -133,7 +133,7 @@ h2 {
 .container {
     width: 100%;
     margin: 0 auto;
-    padding: 70px 40px;
+    padding: 70px 30px;
 }
 
 .nav.container {
@@ -161,10 +161,15 @@ img {
 }
 
 .info {
-    padding-top: 100px;
+    padding-top: 150px;
     text-align: left;
+    font-size: 14px;
+    padding-bottom: 15px;
 }
 
+ .flex {
+    display: flex;
+}
 
 .margin-bottom {
     margin-bottom: 25px;
@@ -173,11 +178,9 @@ img {
 ul,
 li {
     list-style: none;
+    margin: 15px;
     padding: 0;
-    margin-left: -15px;
-    margin-bottom: 10px;
 }
-
 .small-text {
     font-size: 12px;
     text-align: center;
@@ -193,19 +196,51 @@ li {
 
 /* Icons */
 
-
-.icon-phone,
-.icon-mail,
-.icon-location {
-    position: relative;
-    display: block;
-    right: 30px;
-    top: 25px;
+svg {
+    margin-right: 15px;
 }
+
+.icons-col {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+}
+
+.info-col {
+    flex-direction: column;
+    width: 250px;
+}
+
+.icon-phone {
+    margin-top: 60px;
+}
+
+.additional.flex {
+    margin: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 
 @media only screen and (min-width: 961px) {
     .hero {
         background-image: url("images/bg-hero-desktop.svg") no-repeat;
     }
+    .call-to-action {
+        right: 450px;
+        width: 45%;
+    }
+    .additional.flex {
+        justify-content: center;
+    }
+    li {
+        display: inline;
+    }
+    .small-text {
+        text-align: right;
+    }
 }
+
+
+
